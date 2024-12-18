@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>InvestInUs - Nequit</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="Logo/Nequit logo black New.png" rel="icon">
+  <link href="Logo/Nequit logo black New.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: black;
+      background-size: cover;
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+      transition: color 0.3s ease-in-out;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+
+    .sponsorship-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 50px;
+    }
+
+    .sponsorship-info,
+    .payment-qr {
+      width: calc(50% - 20px);
+    }
+
+    @media (max-width: 768px) {
+      .sponsorship-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sponsorship-info,
+      .payment-qr {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+
+    .image-container {
+      width: auto;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #6f6f6f;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .image-container img {
+      width: 150px;
+      height: auto;
+      display: inline-block;
+      margin-right: 10px;
+      animation: moveImages 6s linear infinite;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes moveImages {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animated-brochure-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      height: auto;
+      max-height: 400px;
+      overflow-y: scroll;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      z-index: 9999;
+      background-color: #ffffff;
+      border: 1px solid #000000;
+      padding: 10px;
+    }
+
+    .animated-brochure {
+      width: 100%;
+      height: auto;
+    }
+
+    .animated-brochure img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .show {
+      opacity: 1;
+    }
+
+    .brochure-images {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .brochure-images img {
+      max-width: 45%;
+      height: auto;
+      margin: 10px;
+      animation: fadeIn 1s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .brochure-images img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .form-iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      overflow: auto;
+    }
+
+    h2 {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    h2.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%; /* Makes the icon circular */
+  background-color: orange; /* Sets the background color to orange */
+  color: white; /* Sets the icon color to white */
+  margin-right: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: darkorange; /* Changes background color on hover */
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center">
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logoFont.png" alt="" class="img-fluid"></a>
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html"><b>Home</b></a></li>
+          <li><a href="index.html#services"><b>Achievements</b></a></li>
+          <li><a href="index.html#portfolio"><b>Gallery</b></a></li>
+          <li class="active"><a href="For Sponsors.html"><b>InvestInUs</b></a></li>
+          <li><a href="vehicles.html"><b>Vehicles</b></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <br>
+  <br>
+
+  <div class="section-title">
+    <h2 class="animated-title" style="color: rgb(0, 0, 0);">Our Sponsors</h2>
+  </div>
+
+  <div class="image-container">
+    <img src="Sponsors/Logo/Chtale.jpg" alt="Chitale Sponsor">
+    <img src="Sponsors/Logo/gnat1.jpg" alt="Gnat Foundry">
+    <img src="Sponsors/Logo/Flauta.jpg" alt="Image 2">
+    <img src="Sponsors/Logo/BENDER1.jpg" alt="Image 3">
+    <img src="Sponsors/Logo/Taparia1.jpg" alt="Image 5">
+    <img src="Sponsors/Logo/Prashant1.jpg" alt="Image 6">
+    <img src="Sponsors/Logo/BKT1.jpg" alt="Image 7">
+    <img src="Sponsors/Logo/bank.jpg" alt="Image 9">
+    <img src="Sponsors/Logo/Om1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/Plastic1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/porwal1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/Swad1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/Chtale.jpg" alt="Chitale Sponsor">
+    <img src="Sponsors/Logo/gnat1.jpg" alt="Gnat Foundry">
+    <img src="Sponsors/Logo/Flauta.jpg" alt="Image 2">
+    <img src="Sponsors/Logo/BENDER1.jpg" alt="Image 3">
+    <img src="Sponsors/Logo/Taparia1.jpg" alt="Image 5">
+    <img src="Sponsors/Logo/Prashant1.jpg" alt="Image 6">
+    <img src="Sponsors/Logo/BKT1.jpg" alt="Image 7">
+    <img src="Sponsors/Logo/bank.jpg" alt="Image 9">
+    <img src="Sponsors/Logo/Om1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/Plastic1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/porwal1.jpg" alt="Image 10">
+    <img src="Sponsors/Logo/Swad1.jpg" alt="Image 10">
+  </div>
+
+  <main id="main">
+    <section id="sponsorship">
+      <div class="container">
+        <div class="row sponsorship-section">
+          <div class="col-lg-6 sponsorship-info">
+            <h2 class="animated-title" style="color: #ff9100;">Interested in Sponsoring Us?</h2>
+            <p style="color: #ff9100;">We appreciate your interest in supporting us. Please fill out the form below:</p>
+            <iframe class="form-iframe" src="https://forms.gle/psURG8zVxXyww9wz6">Loading...</iframe>
+            <br>
+            <h2 class="animated-title" style="color: #ff9100;">Why should one Sponsor us?</h2>
+            <p style="color: #ff9100;">1. Share our Sponsors message<br>2. Trade Shows (Gathering of all our sponsors)<br>3. Stay connected by updating team progress continuously<br>4. Give them a token of Appreciation</p>
+          </div>
+
+          <div class="col-lg-6 payment-qr">
+            <h2 class="animated-title" style="color: #ff9100;">Payment QR Code</h2>
+            <p style="color: #ff9100;">Scan the QR code below to make a payment:</p>
+            <img src="QR.jpg" alt="Payment QR Code">
+            <h2 class="animated-title" style="color: #ff9100;">Our Broucher</h2>
+            <div class="brochure-images">
+              <img src="Sponsors/Broucher1.png" alt="Brochure 1">
+              <img src="Sponsors/Broucher2.png" alt="Brochure 2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 footer-contact">
+            <div class="contact-box">
+              <h3>Nequit</h3>
+              <p>
+                RIT Motorsports - Team Nequit <br>
+                K.E.Society's Rajarambapu Institute of Technology, Islampur<br>
+                Taluka:- Walwa, Dist:- Sangli-415414 <br><br>
+                <strong>Phone:</strong> Vasim Mujawar:- <a href="tel:+91 90223 43354">+91 90223 43354 </a><br>
+                <strong>Email:</strong> <a href="mailto:nequit@ritindia.edu">nequit@ritindia.edu</a><br>
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-12 footer-links">
+            <div class="links-box">
+              <h4>Our Social Networks</h4>
+              <p>Stay updated by following our social networks</p>
+              <div class="social-links mt-3">
+                <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
+                <a href="https://www.facebook.com/teamnequit/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://instagram.com/team_nequit?igshid=1c0yjowhovn46" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <!--<a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
+                <a href="https://www.linkedin.com/company/team-nequit" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+    <div id="preloader"></div>
+  </footer>
+
+
+
+
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/venobox/venobox.min.js"></script>
+<script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+
+  <!-- Script to show the brochure when in the viewport -->
+  <script>
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function showBrochure() {
+      var brochureContainer = document.getElementById('animated-brochure-container');
+      if (isInViewport(brochureContainer)) {
+        brochureContainer.classList.add('show');
+      } else {
+        brochureContainer.classList.remove('show');
+      }
+    }
+    window.addEventListener('scroll', showBrochure);
+
+    // Show titles on scroll
+    function showTitlesOnScroll() {
+      var titles = document.querySelectorAll('.animated-title');
+      titles.forEach(function (title) {
+        if (isInViewport(title)) {
+          title.classList.add('show');
+        } else {
+          title.classList.remove('show');
+        }
+      });
+    }
+    window.addEventListener('scroll', showTitlesOnScroll);
+  </script>
+
+</body>
+
+</html>
